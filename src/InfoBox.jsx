@@ -3,20 +3,13 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 
-const InfoBox = () => {
+const InfoBox = (Info) => {
   const INT_URL = "https://images.unsplash.com/photo-1680352267694-a7fd4c33d4e1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGR1c3R5JTIwd2hlYXRoZXJ8ZW58MHx8MHx8fDA%3D";
-  let info = {
-    city: "kathmandu",
-    feelsLike: 27.6,
-    temp: 29.12,
-    tempMin: 29.12,
-    tempMax: 29.12,
-    humidity: 26,
-    wheather: "cloud",
-  };
+  
   return (
     <div className="InfoBox">
-      <h1>Wheather Info- {info.wheather}</h1>
+      
+      <div className='box'>
       <Card sx={{ maxWidth: 345 }}>
         <CardMedia
           sx={{ height: 140 }}
@@ -25,20 +18,21 @@ const InfoBox = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            {info.city}
+            {Info.city}
           </Typography>
           <Typography variant="body2" color="text.secondary" component={"span"}>
-            <p>Temperature-{info.temp}&deg;C</p>
-            <p>Humidity-{info.humidity}</p>
-            <p>Min Temp -{info.tempMin}&deg;C</p>
-            <p>Max Temp -{info.tempMax}&deg;C</p>
-            <p>The wheather can be described as {<i>{info.wheather}</i>} and feels like{info.feelsLike}&deg;C</p>
+            <p>Temperature-{Info.temp}&deg;C</p>
+            <p>Humidity-{Info.humidity}</p>
+            <p>Min Temp -{Info.tempMin}&deg;C</p>
+            <p>Max Temp -{Info.tempMax}&deg;C</p>
+            <p>The wheather can be described as {<i>{Info.wheather}</i>} and feels like{Info.feelsLike}&deg;C</p>
           </Typography>
         </CardContent>
 
       </Card>
+     </div>
     </div>
   )
 }
 
-export default InfoBox
+export default InfoBox;

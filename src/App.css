@@ -2,7 +2,14 @@
 
 .SearchBox{
     text-align: center;
+    margin-bottom: 22px;
 }
 .InfoBox{
+    
     text-align: center;
+}
+.box{
+    display: flex;
+    justify-content:center ;
+    
 }

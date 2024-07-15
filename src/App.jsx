@@ -1,11 +1,11 @@
 import './App.css'
-import SearchBox from "./SearchBox"
-import InfoBox from './InfoBox'
+
+import WheatherApp from './WheatherApp'
 const App = () => {
   return (
     <div>
-      <SearchBox />
-      <InfoBox />
+     
+      <WheatherApp />
     </div>
   )
 }
